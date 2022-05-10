@@ -1,0 +1,27 @@
+jupyterhub::jupyterhub_config_hash:
+#        SbatchForm:
+#                runtime:
+#                        min: 3.5
+#                        def: 3.5
+#                        max: 5.0
+#                nprocs:
+#                        min: 1
+#                        def: 1
+#                        max: 1
+#                memory:
+#                        min: 1024
+#                        max: 2048
+#                        def: 2048
+#                oversubscribe:
+#                        def: true
+#                        lock: true
+#                ui:
+#                        def: 'terminal'
+#        SlurmFormSpawner:
+#                disable_form: false
+
+
+jupyterhub::enable_otp_auth: false
+profile::cvmfs::client::lmod_default_modules: ['StdEnv/2020', 'gcc/9.3.0']
+
+#jupyterhub::kernel::venv::packages: ['numpy', 'pandas', 'matplotlib']
